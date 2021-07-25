@@ -1,0 +1,40 @@
+*, .container-fluid {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-image: linear-gradient(rgba(98, 9, 214, .4), rgba(168, 5, 84, .4)), url('https://leverageedu.com/blog/wp-content/uploads/2020/07/Branches-of-Mathematics.png');
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+body a:hover {
+	text-decoration: none;
+}
+
+body .btn:focus, body .form-control:focus {
+	box-shadow: 0 0 0 black;
+	border-color: #d61372;
+}
+
+.navbar-brand a {
+	color: #d61372;
+	font-family: times;
+	font-style: italic;
+	text-shadow: 31px 12px 1px #d28e30;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.nav-link {
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.nav-link[aria-expanded="true"] {
+	color: #d61372 !important;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Playing With Math In JavaScript</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-md navbar-dark">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="#" class="h3">M</a>
+				</div>
+
+				<button class="navbar-toggler bg-success" data-toggle="collapse" data-target="#btn_group">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="navbar-collapse collapse" id="btn_group"> 
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><span class="nav-link" data-toggle="collapse" data-target="#odd_number" aria-expanded="true">Odd</span></li>
+						<li class="nav-item"><span class="nav-link" data-toggle="collapse" data-target="#even_number">Even</span></li>
+						<li class="nav-item"><span class="nav-link" data-toggle="collapse" data-target="#prime_number">Prime</span></li>
+						<li class="nav-item"><span class="nav-link" data-toggle="collapse" data-target="#multiple">Multiple</span></li>
+						<li class="nav-item"><span class="nav-link" data-toggle="collapse" data-target="#multiplier">Multiplier</span></li>
+						<li class="nav-item"><span class="nav-link" data-toggle="collapse" data-target="#lcm_number">LCM</span></li>
+						<li class="nav-item"><span class="nav-link" data-toggle="collapse" data-target="#hcf_number">HCF</span></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="playing-area" id="accordion">
+				<div class="container show collapse" id="odd_number" data-parent="#accordion">
+					<div class="container-heading py-4">
+						<h3 class="text-center heading text-light">Odd Number(1 - 1000)</h3>
+					</div>
+					<div class="res-container row" id="odd_res_container">
+						<button class="btn btn-success mx-auto" id="odd_res_btn">Show Result</button>
+						<!-- This part comes from javascript -->
+					</div>
+				</div>
+
+				<div class="container collapse" id="even_number" data-parent="#accordion">
+					<div class="container-heading py-4">
+						<h3 class="text-center heading text-light">Even Number(1 - 1000)</h3>
+					</div>
+					<div class="res-container row" id="even_res_container">
+						<button class="btn btn-success mx-auto" id="even_res_btn">Show Result</button>
+						<!-- This part comes from javascript -->
+					</div>
+				</div>
+
+				<div class="container collapse" id="prime_number" data-parent="#accordion">
+					<div class="container-heading py-4">
+						<h3 class="text-center heading text-light">Prime Number(1 - 1000)</h3>
+					</div>
+					<div class="res-container row" id="prime_res_container">
+						<button class="btn btn-success mx-auto" id="prime_res_btn">Show Result</button>
+						<!-- This part comes from javascript -->
+					</div>
+				</div>
+
+				<div class="container collapse" id="multiple" data-parent="#accordion">
+					<div class="container-heading py-4">
+						<h3 class="text-center heading text-light">Multiple Numbers</h3>
+					</div>
+					<div class="input-section mb-4">
+						<div class="row">
+							<div class="col-md-6 col-sm-9 mx-auto">
+								<label for="lsg_input" class="text-light">Input Your Number Here :</label>
+								<div class="input-group">
+									<input type="number" class="form-control" id="lsg_input" value="24">
+									<div class="input-group-append">
+										<button class="btn btn-success" id="lsg_btn">Multiple</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="res-container row" id="lsg_res_container">
+						<!-- This part comes from javascript -->
+					</div>
+				</div>
+
+				<div class="container collapse" id="multiplier" data-parent="#accordion">
+					<div class="container-heading py-4">
+						<h3 class="text-center heading text-light">Multiplier Numbers</h3>
+					</div>
+					<div class="input-section mb-4">
+						<div class="row">
+							<div class="col-md-6 col-sm-9 mx-auto">
+								<label for="lsg_input" class="text-light">Input Your Number Here :</label>
+								<div class="input-group">
+									<input type="number" class="form-control" id="gsg_input" value="24">
+									<div class="input-group-append">
+										<button class="btn btn-success" id="gsg_btn">multiplier</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="res-container row" id="gsg_res_container">
+						<!-- This part comes from javascript -->
+					</div>
+				</div>
+
+				<div class="container collapse" id="lcm_number" data-parent="#accordion">
+					<div class="container-heading py-4">
+						<h3 class="text-center heading text-light">Least Common Multiplier</h3>
+					</div>
+					<div class="input-section mb-4">
+						<div class="row">
+							<div class="col-md-6 col-sm-9 mx-auto">
+								<div class="number-container mb-3 text-light" id="lcm_num_container"></div>
+								<label for="lcm_input" class="text-light">Input Your Number Here :</label>
+								<div class="input-group">
+									<input type="number" class="form-control" id="lcm_input" value="24">
+									<div class="input-group-append">
+										<button class="btn btn-success" id="lcm_num_add_btn">Add Number</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="res-container row" id="lcm_res_container">
+						<button class="btn btn-success mx-auto" id="lcm_res_btn">Show Result</button>
+						<!-- This part comes from javascript -->
+					</div>
+				</div>
+
+				<div class="container collapse" id="hcf_number" data-parent="#accordion">
+					<div class="container-heading py-4">
+						<h3 class="text-center heading text-light">Highest Common Factor</h3>
+					</div>
+					<div class="input-section mb-4">
+						<div class="row">
+							<div class="col-md-6 col-sm-9 mx-auto">
+								<div class="number-container mb-3 text-light" id="hcf_num_container"></div>
+								<label for="hcf_input" class="text-light">Input Your Number Here :</label>
+								<div class="input-group">
+									<input type="number" class="form-control" id="hcf_input" value="24">
+									<div class="input-group-append">
+										<button class="btn btn-success" id="hcf_num_add_btn">Add Number</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="res-container row" id="hcf_res_container">
+						<button class="btn btn-success mx-auto" id="hcf_res_btn">Show Result</button>
+						<!-- This part comes from javascript -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
