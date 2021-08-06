@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+}
+
+body[data-theme="light"] {
+	--bg: #eee;
+	--card-bg: #ddd;
+	--heading: #222;
+	--text: #333;
+}
+
+body[data-theme="dark"] {
+	--bg: #222;
+	--card-bg: #333;
+	--heading: #ccc;
+	--text: #eee;
+}
+
+body, .container {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background: var(--bg);
+}
+
+.card {
+	width: 100%;
+	max-width: 500px;
+	padding: 20px 15px;
+	background: var(--card-bg);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+}
+
+.card h2 {
+	font-size: 30px;
+	text-align: center;
+	color: var(--heading);
+	margin-bottom: 20px;
+}
+
+.card .jokes {
+	font-size: 20px;
+	color: var(--text);
+	line-height: 30px;
+	text-align: justify;
+}
+
+.card .link {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.card button {
+	color: var(--text);
+	background: var(--bg);
+	padding: 7px 15px;
+	border-radius: 10px;
+	font-size: 18px;
+	border: 0px;
+	outline: none;
+	font-weight: 700;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0,0,0, .2);
+}
+
+.card button:active {
+	transform: scale(.95);
+}
+
+.switcher-wrap {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+}
+
+.switcher {
+	position: relative;
+	cursor: pointer;
+}
+
+.switcher::before {
+	content: '';
+	position: absolute;
+	width: 35px;
+	height: 17px;
+	background: #333;
+	top: -5px;
+	left: -10px;
+	border-radius: 20px;
+	transition: background .2s ease;
+}
+
+.switcher::after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: -2px;
+	left: -5px;
+	background: #bad;
+	border-radius: 50%;
+	transition: .2s ease;
+}
+
+.switcher:checked::before {
+	background: #ddd;
+}
+
+.switcher:checked::after {
+	left: 10px;
+}
