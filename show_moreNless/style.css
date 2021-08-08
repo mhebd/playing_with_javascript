@@ -1,0 +1,59 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #ccc;
+	padding: 50px 15px;
+}
+
+section {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 30px 20px;
+	background: #eee;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+article {
+	margin-bottom: 60px;
+}
+
+article[data-status="less"] .full {
+	display: none;
+}
+
+article[data-status="full"] .less {
+	display: none;
+}
+
+article h2 {
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(0, 0, 0, .3)
+}
+
+article p {
+	font-size: 20px;
+	line-height: 30px;
+	color: #555;
+}
+
+article button {
+	border: 1px solid rgba(0, 0, 0, .4);
+	outline: none;
+	background: #000;
+	color: #ddd;
+	font-size: 18px;
+	padding: 7px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+article button:active {
+	transform: scale(.97);
+}
