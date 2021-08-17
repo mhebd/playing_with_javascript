@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recharge Your Mind && Refrash Your Branin</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="heading-wrap">
+				<h2 class="heading animate">Recharge Your Mind</h2>
+				<!-- <p class="small">Mixup your favorite sound & refrash your mind</p> -->
+			</div>
+
+			<div class="controller-wrap">
+				<div class="grid-container">
+
+					<div class="grid-item ss-controller" data-info="Rain Sound">
+						<img src="icons/rain.png" alt="rain sound" class="icon" data-name="rain">
+						<input type="range" name="volume" class="volume" min="0" max="1" step="0.1" value="1" data-name="rain">
+					</div>
+
+					<div class="grid-item ss-controller" data-info="Thunderstorm Sound">
+						<img src="icons/thunderstorm.png" alt="thunderstorm sound" class="icon" data-name="thunderstorm">
+						<input type="range" name="volume" class="volume" min="0" max="1" step="0.1" value="1" data-name="thunderstorm">
+					</div>
+
+					<div class="grid-item ss-controller" data-info="Air Flow Sound">
+						<img src="icons/air_flow.png" alt="air flow sound" class="icon" data-name="air_flow">
+						<input type="range" name="volume" class="volume" min="0" max="1" step="0.1" value="1" data-name="air_flow">
+					</div>
+
+					<div class="grid-item ss-controller" data-info="Bird Sound">
+						<img src="icons/bird.png" alt="bird sound" class="icon" data-name="bird">
+						<input type="range" name="volume" class="volume" min="0" max="1" step="0.1" value="1" data-name="bird">
+					</div>
+
+					<div class="grid-item ss-controller" data-info="Drizzling Sound">
+						<img src="icons/drizzling.png" alt="drizzling sound" class="icon" data-name="drizzling">
+						<input type="range" name="volume" class="volume" min="0" max="1" step="0.1" value="1" data-name="drizzling">
+					</div>
+
+					<div class="grid-item ss-controller" data-info="River Rain Sound">
+						<img src="icons/river_rain.png" alt="river rain sound" class="icon" data-name="river_rain">
+						<input type="range" name="volume" class="volume" min="0" max="1" step="0.1" value="1" data-name="river_rain">
+					</div>
+
+					<div class="grid-item ss-controller" data-info="River Sound">
+						<img src="icons/river.png" alt="river sound" class="icon" data-name="river">
+						<input type="range" name="volume" class="volume" min="0" max="1" step="0.1" value="1" data-name="river">
+					</div>
+
+					<div class="grid-item ss-controller" data-info="See Beach Sound">
+						<img src="icons/see_beach.png" alt="see beach sound" class="icon" data-name="see_beach">
+						<input type="range" name="volume" class="volume" min="0" max="1" step="0.1" value="1" data-name="see_beach">
+					</div>
+
+					<div class="grid-item ss-controller" data-info="Night Sound">
+						<img src="icons/night.png" alt="night sound" class="icon" data-name="night">
+						<input type="range" name="volume" class="volume" min="0" max="1" step="0.1" value="1" data-name="night">
+					</div>
+
+					<div class="grid-item ss-controller" data-info="Fire Burn Sound">
+						<img src="icons/fire_burn.png" alt="fire burn sound" class="icon" data-name="fire_burn">
+						<input type="range" name="volume" class="volume" min="0" max="1" step="0.1" value="1" data-name="fire_burn">
+					</div>
+
+					<div class="grid-item ss-controller" data-info="Train Sound">
+						<img src="icons/train.png" alt="train sound" class="icon" data-name="train">
+						<input type="range" name="volume" class="volume" min="0" max="1" step="0.1" value="1" data-name="train">
+					</div>
+
+					<div class="grid-item ss-controller" data-info="Noise Sound">
+						<img src="icons/noise.png" alt="noise sound" class="icon" data-name="noise">
+						<input type="range" name="volume" class="volume" min="0" max="1" step="0.1" value="1" data-name="noise">
+					</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- I'm keeping all media file here -->
+	<div class="media-container">
+		<audio src="media/rain.mp3" data-name="rain" class="d-none"></audio>
+		<audio src="media/thunderstorm.mp3" data-name="thunderstorm" class="d-none"></audio>
+		<audio src="media/air_flow.mp3" data-name="air_flow" class="d-none"></audio>
+		<audio src="media/bird.mp3" data-name="bird" class="d-none"></audio>
+		<audio src="media/drizzling.mp3" data-name="drizzling" class="d-none"></audio>
+		<audio src="media/river_rain.mp3" data-name="river_rain" class="d-none"></audio>
+		<audio src="media/river.mp3" data-name="river" class="d-none"></audio>
+		<audio src="media/see_beach.mp3" data-name="see_beach" class="d-none"></audio>
+		<audio src="media/night.mp3" data-name="night" class="d-none"></audio>
+		<audio src="media/fire_burn.mp3" data-name="fire_burn" class="d-none"></audio>
+		<audio src="media/train.mp3" data-name="train" class="d-none"></audio>
+		<audio src="media/noise.mp3" data-name="noise" class="d-none"></audio>
+	</div>
+
+	<div class="tooltip-bg">
+		<p></p>
+		<span class="arrow"></span>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

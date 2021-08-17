@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Merriweather', serif;
+}
+
+.container-fluid {
+	background: #fef;
+	color: #222;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	background: #fff;
+	height: auto;
+	min-height: 100vh;
+}
+
+.heading-wrap {
+	text-align: center;
+	padding: 50px 0 30px 0;
+}
+
+.heading {
+	font-style: italic;
+	font-size: 30px;
+	padding: 10px 30px;
+	border-radius: 30px;
+	display: inline;
+}
+
+.heading.animate {
+	background: #bad;
+	box-shadow: 0 0 7px #333;
+	color: #fff;
+}
+
+.controller-wrap {
+	padding: 30px 0;
+}
+
+.grid-container {
+	display: grid;
+	grid-gap: 30px 10px;
+	grid-template-columns: repeat(4, auto);
+	justify-content: center;
+}
+
+.grid-item {
+	max-width: 200px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.ss-controller .icon {
+	width: 90%;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.ss-controller .volume {
+	height: 3px;
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.ss-controller .volume.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+.media-container, .d-none {
+	visibility: hidden;
+	opacity: 0;
+	display: none;
+}
+
+/*tooltip styling*/
+.tooltip-bg {
+	background: #bad;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 7px 20px;
+	border-radius: 20px;
+	color: #eee;
+	box-shadow: 0 0 10px #333;
+	transition: all .2s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.tooltip-bg.open {
+	visibility: visible;
+	opacity: 1;
+}
+
+.tooltip-bg .arrow {
+	width: 15px;
+	height: 15px;
+	display: block;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #bad transparent transparent transparent;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+
+/*Media style*/
+@media(max-width: 700px) {
+	.grid-container {
+		grid-template-columns: repeat(2, auto);
+	}
+}
+
+@media(max-width: 400px) {
+	.grid-container {
+		grid-template-columns: repeat(1, auto);
+	}
+}
