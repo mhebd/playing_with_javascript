@@ -1,0 +1,86 @@
+/* Reset Css */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #ded;
+	font-family: monospace;
+}
+
+.container {
+	background: #fff;
+	width: 100%;
+	max-width: 1000px;
+	margin: 50px auto;
+	padding: 30px 15px;
+	box-shadow: 0 0 10px #333;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.heading {
+	font-size: 2.5em;
+	margin-bottom: 70px;
+	padding-bottom: 30px;
+	border-bottom: 2px solid rgba(0, 0, 0, .3);
+	text-align: center;
+}
+
+.row {
+	display: grid;
+	margin-bottom: 40px;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 30px;
+}
+
+.row .img {
+	width: 100%;
+}
+
+.row p {
+	font-size: 20px;
+	line-height: 30px;
+	text-align: justify;
+}
+
+
+
+
+/* fade in styling */
+
+.anim {
+	transition: opacity 180ms ease-out, transform .7s ease-out;
+}
+
+.slide-in-left {
+	transform: translateX(-100%);
+	opacity: 0;
+}
+
+.slide-in-right {
+	transform: translateX(100%);
+	opacity: 0;
+}
+
+.slide-in-bottom {
+	transform: translateY(100%);
+	opacity: 0;
+}
+
+.slide-in-top {
+	transform: translateY(-100%);
+	opacity: 0;
+}
+
+.anim.grow-up {
+	transform: scale(0.001) rotate(180deg);
+}
+
+.anim.show {
+	transform: translate(0) scale(1) rotate(0deg);
+
+	opacity: 1;
+}
